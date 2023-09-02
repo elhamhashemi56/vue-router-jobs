@@ -3,6 +3,7 @@
     <router-link to="/">Home</router-link> |
     <!-- <router-link to="/about">About</router-link> -->
     <router-link :to="{name:'About'}">About</router-link> |
+    <router-link :to="{name:'Jobs'}">Jobs</router-link> |
     <a href="/about">about</a>
   </nav>
   <router-view/>
@@ -27,6 +28,10 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: white;
+  background-color: red;
+  padding: 7px;
+  border-radius: 5px;
+  text-decoration: none;
 }
 </style>
